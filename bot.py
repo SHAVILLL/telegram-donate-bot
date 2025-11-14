@@ -3,7 +3,7 @@ from telebot import types
 import os
 
 # Получение токена из переменной окружения
-API_TOKEN = os.getenv("BOT_TOKEN")  # НЕ ХРАНИ ТОКЕН В КОДЕ!
+API_TOKEN = os.getenv("BOT_TOKEN")  
 
 if not API_TOKEN:
     raise ValueError("Токен бота не найден! Установи переменную окружения BOT_TOKEN.")
